@@ -1,0 +1,33 @@
+<!-- list of messages sent-->
+<div class="col-lg-6 mb-5">
+    <div class="row fs-5" id="wrap-id">
+        <h2>List of Messages sent</h2>
+        <% messageResults.reverse().forEach(function (messageResult) { %>
+            <div class="col-lg-4 col-md-4 border">
+                <p>
+                    <%= messageResult.user %>
+                </p>
+
+            </div>
+            <div class="col-lg-4 col-md-4 border">
+                <p>
+                    <%= messageResult.time %>
+                </p>
+
+            </div>
+            <div class="col-lg-4 col-md-4 border">
+                <% if(messageResult.otp && (messageResult.otp).length>=6){ %>
+                    <p>
+                        <%= messageResult.otp%>
+                    </p>
+                    <%} %>
+            </div>
+            <% }); %>
+    </div>
+</div>
+</div>
+</div>
+<script src="js/script.js" charset="utf-8"></script>
+</body>
+
+</html>

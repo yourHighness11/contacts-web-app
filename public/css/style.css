@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+body {
+  background: rgb(17, 100, 102);
+  background: radial-gradient(circle, rgba(17, 100, 102, 1) 6%, rgba(44, 53, 49, 1) 89%);
+  font-family: raleway;
+  color: white;
+  margin: 0;
+}
+
+p {
+  color: #FFFFFF;
+}
+
+.main-class {
+  margin-bottom: 3rem;
+}
+
+.top-font {
+  padding-top: 4rem;
+
+}
+
+.top-font h1 {
+  text-align: center;
+  color: #d1e8e2;
+  font-family: 'Kanit', sans-serif;
+  font-size: 5rem;
+  font-weight: 500;
+}
+
+
+.container h2 {
+  text-align: center;
+  color: #EAEAEA;
+  font-size: 3rem;
+  margin-bottom: 2.5rem;
+}
+
+#link-Id {
+  background: transparent;
+  color: #EAEAEA;
+  overflow-wrap: break-word;
+
+}
+
+.input-message {
+  margin-top: 4rem;
+}
+
+.contactInfo-section h3 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 3.5rem;
+  color: #d1e8e2;
+}
+
+.contactInfo-section p {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.line {
+  border-bottom: 3px solid #FCFDF2;
+  display: block;
+  width: 90%;
+  margin: 3rem 5% 0.625rem 5%;
+}
+
+
+#wrap-id {
+  overflow-wrap: break-word;
+}
+
+#link-Id:hover {
+  color: #FAF7F0;
+  transition: 0.2s;
+  text-shadow: 1px 1px 2px black, 0 0 25px #FFE1E1, 0 0 5px darkblue;
+}
+
+
+
+@media only screen and (min-width:0px) and (max-width:600px) {
+  .top-font h1 {
+    font-size: 3rem;
+  }
+
+  .line {
+    width: 96%;
+    margin: 3rem 2% 0.625rem 2%;
+  }
+  .container h3 {
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+
+  .contactInfo-section p{
+    font-size: 1rem;
+  }
+
+  #wrap-id h2,
+  .container h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+
+  #contact-list {
+    padding-right: 0px;
+  }
+}

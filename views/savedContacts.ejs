@@ -1,0 +1,17 @@
+<!-- saved names -->
+<div class="col-lg-6 list-group mb-5" id="contact-list">
+    <h2>List of Contacts</h2>
+
+
+    <% results.forEach((result)=>{ %>
+
+        <a href="/<%= result.id %>" class="list-group-item list-group-item-action border" id="link-Id">
+            <div class="container text-center fs-3">
+                <p>
+                    <%= result.fname %> <%= result.lname %> 
+                </p>
+            </div>
+        </a>
+        <% }); %>
+
+</div>
