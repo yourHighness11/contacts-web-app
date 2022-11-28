@@ -4,13 +4,8 @@ const app = express();
 const bodyParser = require("body-parser");
 const port = process.env.PORT || 3000;
 const ejs = require("ejs");
-const {
-  default: mongoose
-} = require("mongoose");
-const {
-  logger,
-  logEvents
-} = require("./middleware/logger");
+const { default: mongoose } = require("mongoose");
+const { logger, logEvents } = require("./middleware/logger");
 const errorHandler = require("./middleware/errorHandler");
 const connectDB = require("./config/dbConnect");
 

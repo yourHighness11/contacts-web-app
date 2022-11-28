@@ -11,7 +11,7 @@ const authToken = process.env.AUTHTOKEN; // Your Auth Token from www.twilio.com/
 const client = new twilio(accountSid, authToken);
 
 
-//home page 
+//home page
 const getHome = (req, res) => {
     Promise.all([Contact.find({}), Message.find({})])
         .then(totalResult => {
@@ -73,7 +73,7 @@ const postId = (req, res) => {
                 .create({
                     body: userinput,
                     to: results.phone, // You will recieve the OTP on this number
-                    from: '+17816508430', // Change this to your twilio number
+                    from: '+0123456789', // Change this to your twilio number
                 })
                 .then((message) => {
                     const sentDate = message.dateCreated;
