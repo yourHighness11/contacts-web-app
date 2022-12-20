@@ -10,7 +10,7 @@ const errorHandler = require("./middleware/errorHandler");
 const connectDB = require("./config/dbConnect");
 
 
-connectDB(); //got to config folder to change connection string
+connectDB(); //go to config folder to change connection string
 app.use(logger); //logs are stored in logs folder
 app.use(express.json()); //to parse json data
 app.use(bodyParser.urlencoded({
@@ -25,11 +25,10 @@ app.use("/", require("./routes/fileRoute"));
 app.use(errorHandler);
 
 //mongoose connection
-
-// console.log("Connnected to mongoDB");
-app.listen(port, () => {
-  // console.log(`server running on port ${port}`)
-});
+mongoose.connection.once('open', () => {
+    console.log('Connected to MongoDB')
+    app.listen(port, () => console.log(`Server running on port ${port}`))
+})
 
 mongoose.connection.on("error", err => {
   logEvents(`${err.no}: ${err.code}\t${err.syscall}\t${err.hostname}`, 'mongoErrLog.log');
