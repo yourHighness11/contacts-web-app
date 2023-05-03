@@ -10,7 +10,7 @@ Project is based on node.js, ejs , mongoose, twilio and express,
 
 # For twilio
 
-1. create ".env" file, add you twilio accounts id as "ACCOUNDSID", auth token as "AUTHTOKEN" and twilio no as "TWILIO_NO".
+1. first type 'npm i twilio' then create ".env" file, add you twilio accounts id as "ACCOUNDSID", auth token as "AUTHTOKEN" and twilio no as "TWILIO_NO".
 
 # Run the project
 
