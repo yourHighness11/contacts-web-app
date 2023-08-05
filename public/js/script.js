@@ -8,7 +8,7 @@ function togglePopup() {
     document.getElementById("text-area").innerText = "Hi. Your OTP is: " + OTP;
 }
 
-window.alert("This service is only for trial..user can only send sms to Sarvesh Kirodiwal(1st in the list)")
+// window.alert("This service is only for trial..user can only send sms to Sarvesh Kirodiwal(1st in the list)")
 
 
 
